@@ -26,6 +26,7 @@ pipeline {
                 sh 'id'
                 sh 'whoami'
                 sh 'cp ./jenkins/scripts/deliver.sh ./jenkins/scripts/deliver_copy.sh'
+                sh 'chmod 777 ./jenkins/scripts/deliver_copy.sh'
                 sh './jenkins/scripts/deliver_copy.sh'
             }
         }
