@@ -23,6 +23,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
+                sh 'id'
                 sh 'whoami'
                 sh './jenkins/scripts/deliver.sh'
             }
