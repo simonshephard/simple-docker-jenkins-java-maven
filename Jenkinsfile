@@ -26,6 +26,7 @@ pipeline {
                 sh 'id'
                 sh 'whoami'
                 sh './jenkins/scripts/deliver.sh'
+                sh 'cp ./jenkins/scripts/deliver.sh ./jenkins/scripts/deliver_copy.sh'
             }
         }
     }
