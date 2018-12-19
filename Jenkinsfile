@@ -25,7 +25,7 @@ pipeline {
             steps {
                 sh 'id'
                 sh 'whoami'
-                sh './jenkins/scripts/deliver.sh'
+                bat './jenkins/scripts/deliver.sh'
             }
         }
     }
